@@ -30,14 +30,13 @@
 09:00-12:00|13:00-17:00
 
 - Entwurfsmuster einsetzen  
-- Decorators  
--  
--  
--  
--  
--  
--  
--  
+- "has a" oder "is a"?  
+- Die Schnittstelle einer Klasse
+- Dekoratoren  
+- Descriptoren 
+- Tests aufbauen 
+- Coroutinen 
+- Generatoren
 
 ## Tag 4 - Technische Schulden und die Wartung
 09:00-12:00|13:00-17:00
@@ -45,10 +44,6 @@
 - Das lange Ende einer Programmlösung
 - Was sind technische Schulden?
 - Bekannte Wartungsprobleme
--  
--  
--  
--  
--  
--  
--  
+- Refaktoring und Regressionstests 
+- Externe Anbieter und Bibliotheken  
+- Virtuelle Environments 
