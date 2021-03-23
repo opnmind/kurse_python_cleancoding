@@ -5,33 +5,32 @@
 
 - Aspekte der Codequalität
 - Styles und Community Rules
-- Wie man eine Struktur findet
-- Gute Codeformatierung
-- Wie man einen Namen findet
--  
--  
--  
-- Wie man Code vermisst
-- Wie man Code (nicht) optimiert
+- Der pythonic Style
+- Architektur: Wie man eine Struktur findet
+- Heuristiken und Entwurfsprinzipien
+- Einsatz von Entwurfsmustern
+- Antipattern und Smells
+- Wie man Codequalität misst
+- Werkzeuge
 
-## Tag 2 - Clean Coding in klassischen Programmen
+## Tag 2 - Clean Coding Grundlagen
 09:00-12:00|13:00-17:00
 
-- Programmstruktur und Codegliederung
-- Kommentare und Dokumentationsstrings
-- Funktionen und ihre Struktur
+- Programmstruktur und Formatierung
+- Kommentare und Docstrings
+- Wie man einen Namen findet
+- Variablen und Konstante
+- Typehints und Annotations
+- Funktionen
 - Fehlerhandling
 - Testen rettet Leben
--  
--  
--  
-- 
+- Optimierung und Refactoring   
 
 ## Tag 3 - Clean Coding und Objektorientierung
 09:00-12:00|13:00-17:00
 
--  
--  
+- Entwurfsmuster einsetzen  
+- Decorators  
 -  
 -  
 -  
