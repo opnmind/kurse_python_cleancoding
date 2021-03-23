@@ -1,17 +1,18 @@
 # Clean Coding mit python
 
-## Tag 1 - Warum ist lesbarer Code wichtig?
+## Tag 1 - Was ist lesbarer Code?
 09:00-12:00|13:00-17:00
 
 - Aspekte der Codequalität
 - Styles und Community Rules
-- Codeformatierung
+- Wie man eine Struktur findet
+- Gute Codeformatierung
 - Wie man einen Namen findet
 -  
 -  
 -  
--  
--
+- Wie man Code vermisst
+- Wie man Code (nicht) optimiert
 
 ## Tag 2 - Clean Coding in klassischen Programmen
 09:00-12:00|13:00-17:00
