@@ -6,6 +6,7 @@
 - Aspekte der Codequalität
 - Styles und Community Rules
 - Der pythonic Style
+- Zen of python
 - Architektur: Wie man eine Struktur findet
 - Heuristiken und Entwurfsprinzipien
 - Einsatz von Entwurfsmustern
