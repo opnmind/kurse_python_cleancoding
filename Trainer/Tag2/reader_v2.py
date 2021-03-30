@@ -27,6 +27,10 @@ class LogfileIPReader:
         self._os_errorhandler = os_errorhandler 
         return self
 
+    def set_all_errorhandler(self, all_errorhandler):
+        self._all_errorhandler = all_errorhandler 
+        return self
+
     def run(self)  -> None:
         """ Runner. """
         self._read_log_file()
@@ -69,15 +73,23 @@ class LogfileIPReader:
         """ Stringify List """
         return ', '.join(self._ip_addresses)
 
-def common_errorhandler(e):
-    print("Error: -->", e, "<--")
-    raise e
+def common_errorhandler(e): # Ein Testbeispiel
+    print("Logging: Error: -->", se, "<--")
+    exit(1)
+
+def file_errorhandler(e):
+    print("File not found")
 
 if __name__ == "__main__":
     lf = LogfileIPReader(
             filename = "/home/coder/Workspace/kurse_python_cleancoding/Materialien/Sample.lög"
          ).set_os_errorhandler(
+             file_errorhandler
+         ).set_all_errorhandler(
              common_errorhandler
          )
-    lf.run()
+    # nur für den Test:
+    lf._read_log_file()
+    print("Es geht weiter")
+    #lf.run()
 
