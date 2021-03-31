@@ -21,9 +21,13 @@ class IpFinder:
     def __init__(self, file_path: str, pattern_ip: str=None) -> None:
         """ Docstring """
         self.file_path = file_path
-        self.log_data: str = ""
-        self.adresses: list = []
         self.pattern_ip = pattern_ip if pattern_ip else self.PATTERN_IP
+        self._log_data: str = ""
+        self._adresses: list = []
+
+    def get_log_data(self):
+        """DocString"""
+        return self._log_data.split("\n")
 
     def read_log(self, file_path: str=None) -> 'IpFinder':
         '''
@@ -32,7 +36,7 @@ class IpFinder:
         if file_path:
             self.file_path = file_path
         with open(self.file_path, "r") as file_descriptor:
-            self.log_data = file_descriptor.read()
+            self._log_data = file_descriptor.read()
         return self
 
     def find_ip_adresses(self, pattern_ip: str=None) -> 'IpFinder':
@@ -41,8 +45,8 @@ class IpFinder:
         '''
         if not pattern_ip:
             pattern_ip = self.pattern_ip
-        matches = re.finditer(pattern_ip, self.log_data, re.MULTILINE)
-        self.adresses = [match.group() for match in matches]
+        matches = re.finditer(pattern_ip, self._log_data, re.MULTILINE)
+        self._adresses = [match.group() for match in matches]
         return self
 
 
@@ -50,7 +54,7 @@ class IpFinder:
         '''
         Funktionsname:
         '''
-        return self.adresses
+        return self._adresses
 
 if __name__ == "__main__":
     FILE_PATH = "/home/coder/Workspace/kurse_python_cleancoding/Materialien/Sample.log"
