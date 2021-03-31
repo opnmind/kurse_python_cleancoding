@@ -84,7 +84,7 @@ if __name__ == "__main__":
     lf = LogfileIPReader(
             filename = "/home/coder/Workspace/kurse_python_cleancoding/Materialien/Sample.lög"
          ).set_os_errorhandler(
-             file_errorhandler
+             lambda e: print("File not found")
          ).set_all_errorhandler(
              common_errorhandler
          )
