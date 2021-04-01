@@ -3,6 +3,10 @@ import pytest
 import reader_4
 
 class TestReader(unittest.TestCase):
+
+    def test_upper(self):
+        self.assertEqual('foo'.upper(), 'FOO')
+
     def test_init(self):
         pass
 
@@ -17,3 +21,7 @@ class TestReader(unittest.TestCase):
 
     def test_get_ip_adresses(self):
         pass
+
+
+if __name__ == '__main__':
+    unittest.main()
