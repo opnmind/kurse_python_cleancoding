@@ -1,0 +1,45 @@
+[TOC]
+# Introduction
+https://dbs.uni-leipzig.de/file/Haselhuhn_Hausarbeit.pdf
+http://www.riemerundco.de/bl/?p=191
+http://www.dkriesel.com/science/neural_networks
+# CNN
+https://www.datacamp.com/community/tutorials/convolutional-neural-networks-python
+# DNN
+https://youtu.be/ILsA4nyG7I0
+# RNN
+http://karpathy.github.io/2015/05/21/rnn-effectiveness/
+http://www.ai-united.de/recurrent-neural-networks-und-lstm/
+# LSTM
+https://people.idsia.ch/~juergen/SeppHochreiter1991ThesisAdvisorSchmidhuber.pdf
+https://youtu.be/WCUNPb-5EYI  !!!!
+http://colah.github.io/posts/2015-08-Understanding-LSTMs/ !!!!
+http://www.ai-united.de/lstm-als-neuronales-netzwerk-mit-langem-kurzzeitgedaechtnis/
+https://wiki.pathmind.com/lstm
+https://www5.in.tum.de/lehre/seminare/datamining/ss17/paper_pres/13_nn_deep/essay.pdf
+## Training
+https://machinelearningmastery.com/update-lstm-networks-training-time-series-forecasting/
+https://stats.stackexchange.com/questio
+from Wetzler, Thomas to All Participants:
+[TOC]
+# Introduction
+https://dbs.uni-leipzig.de/file/Haselhuhn_Hausarbeit.pdf
+http://www.riemerundco.de/bl/?p=191
+http://www.dkriesel.com/science/neural_networks
+# CNN
+https://www.datacamp.com/community/tutorials/convolutional-neural-networks-python
+# DNN
+https://youtu.be/ILsA4nyG7I0
+# RNN
+http://karpathy.github.io/2015/05/21/rnn-effectiveness/
+http://www.ai-united.de/recurrent-neural-networks-und-lstm/
+# LSTM
+https://people.idsia.ch/~juergen/SeppHochreiter1991ThesisAdvisorSchmidhuber.pdf
+https://youtu.be/WCUNPb-5EYI  !!!!
+http://colah.github.io/posts/2015-08-Understanding-LSTMs/ !!!!
+http://www.ai-united.de/lstm-als-neuronales-netzwerk-mit-langem-kurzzeitgedaechtnis/
+https://wiki.pathmind.com/lstm
+https://www5.in.tum.de/lehre/seminare/datamining/ss17/paper_pres/13_nn_deep/essay.pdf
+## Training
+https://machinelearningmastery.com/update-lstm-networks-training-time-series-forecasting/
+https://stats.stackexchange.com/questio

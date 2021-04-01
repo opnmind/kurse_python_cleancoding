@@ -3,12 +3,10 @@ import writer
 import game
 
 
-#input_file = reader.FileReader("tipp.txt")
-#result_file = writer.FileWriter("result.txt")
+#input_file = reader.FileReader("./tipp.txt")
+#result_file = writer.FileWriter("./result.txt")
 
-#game.Game().load_tipp(input_file).roll_dices().count_matches().send_results(result_file)
-
-
+game.game_factory("./tipp.txt", "./result.txt").load_tipp().roll_dices().count_matches().send_results()
 
 
 
@@ -19,6 +17,10 @@ import game
 
 
 
+
+
+
+"""
 import unittest
 from unittest.mock import Mock
 
@@ -48,3 +50,4 @@ class Tests(unittest.TestCase):
         self.input_file.read.return_value = "1,2,3,4,5,99"
         with self.assertRaises(game.TooBigNumberError):
             game.Game().load_tipp(self.input_file)
+"""

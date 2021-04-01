@@ -1,5 +1,7 @@
 """Doscstring"""
 import random
+import reader
+import writer
 
 class TooBigNumberError(Exception):
     pass
@@ -7,14 +9,18 @@ class TooBigNumberError(Exception):
 class Game:
     """Doscstring"""
 
-    def __init__(self):
+    def __init__(self, reader=None, writer=None):
         """Doscstring"""
         self._tipp = []
         self._ziehung = []
         self._matches = 0
+        self._reader = reader
+        self._writer = writer
 
-    def load_tipp(self, reader, split_symbol=","):
+    def load_tipp(self, reader=None, split_symbol=","):
         """Doscstring"""
+        if not reader:
+            reader = self._reader
         tipp = reader.read().split(split_symbol)
         if len(tipp) != 6:
             raise IndexError("Falsche Anzahl")
@@ -37,11 +43,17 @@ class Game:
         self._matches = len(set(self._ziehung).intersection(set(self._tipp)))
         return self
 
-    def send_results(self, writer, formatter=None):
+    
+    def send_results(self, writer=None, formatter=None):
         """Doscstring"""
+        if not writer:
+            writer = self._writer
         if formatter:
             text = formatter(self._tipp, self._ziehung, self._matches)
         else:
             text = f"{self._tipp} {self._ziehung} {self._matches}"
         writer.send(text)
         return self
+
+def game_factory(file_name_in, file_name_out):
+    return Game(reader.FileReader(file_name_in), writer.FileWriter(file_name_out))
